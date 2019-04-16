@@ -1,0 +1,16 @@
+$ttl 38400
+rojter.local.	IN	SOA	localhost. dreuter.kth.se. (
+			1555373224
+			10800
+			3600
+			604800
+			38400 )
+rojter.local.	IN	NS	localhost.
+edge.rojter.local.	IN	A	192.168.10.2
+brother.rojter.local.	IN	A	192.168.10.6
+qnap.rojter.local.	IN	A	192.168.10.10
+192.168.10.2.rojter.local.	IN	PTR	edge.rojter.local.
+192.168.10.6.rojter.local.	IN	PTR	brother.rojter.local.
+192.168.10.10.rojter.local.	IN	PTR	qnap.rojter.local.
+
+@   IN  A   192.168.10.1

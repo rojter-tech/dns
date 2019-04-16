@@ -1,0 +1,21 @@
+$ttl 38400
+vsphere.local.	IN	SOA	localhost. dreuter.kth.se. (
+			1555370210
+			10800
+			3600
+			604800
+			38400 )
+vsphere.local.	IN	NS	localhost.
+msserver.vsphere.local.	IN	A	192.168.10.4
+debian.vsphere.local.	IN	A	192.168.10.5
+arch.vsphere.local.	IN	A	192.168.10.7
+esxi.vsphere.local.	IN	A	192.168.10.15
+nas.vsphere.local.	IN	A	192.168.10.25
+192.168.10.4.vsphere.local.	IN	PTR	msserver
+192.168.10.5.vsphere.local.	IN	PTR	debian
+192.168.10.7.vsphere.local.	IN	PTR	arch
+192.168.10.15.vsphere.local.	IN	PTR	esxi
+192.168.10.20.vsphere.local.	IN	PTR	vcenter
+192.168.10.25.vsphere.local.	IN	PTR	nas
+
+@   IN  A   192.168.10.20

@@ -1,0 +1,25 @@
+wget https://www.openssl.org/source/openssl-1.0.2q.tar.gz
+apt install wget
+wget https://www.openssl.org/source/openssl-1.0.2q.tar.gz
+apt install wget -y
+ls
+wget https://www.openssl.org/source/openssl-1.0.2q.tar.gz
+ls
+tar -xzf openssl*
+ls
+cd openssl*
+ls
+cd openssl-1.0.2q
+ls
+ls | grep rpm
+ls
+make
+apt install make
+apt install cmake -y
+apt install make -y
+make
+make install
+apt install openssl
+perl -e 'use Net::SSLeay'
+apt install curl -y
+apt install git -y
