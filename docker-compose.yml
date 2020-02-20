@@ -10,4 +10,4 @@ services:
     - "10000:10000/tcp"
     volumes:
     - /var/dockerdata/certs/rojter.tech:/data/webmin/etc/certs
-    - /srv/docker/bind:/data
+    - /var/dockerdata/dns:/data
