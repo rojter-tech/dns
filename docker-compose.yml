@@ -1,4 +1,4 @@
-version: '2'
+version: '3.7'
 
 services:
   bind:
@@ -8,5 +8,17 @@ services:
     - "53:53/udp"
     - "53:53/tcp"
     - "10000:10000/tcp"
+    secrets:
+    - mainpw
+    environment:
+      ROOT_PASSWORD_FILE: /run/secrets/mainpw
     volumes:
-    - /var/dockerdata/certs/rojter.tech:/data/webmin/etc/certs
+    - data:/data
+    - /var/dockerdata/certs/rojter.tech:/data/webmin/certs
+
+volumes:
+  data:
+
+secrets:
+  mainpw:
+    external: true
