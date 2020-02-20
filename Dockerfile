@@ -20,12 +20,18 @@ COPY --from=add-apt-repositories /etc/apt/sources.list /etc/apt/sources.list
 
 RUN rm -rf /etc/apt/apt.conf.d/docker-gzip-indexes \
  && apt-get update \
+ && apt-get upgrade -y \
  && DEBIAN_FRONTEND=noninteractive apt-get install -y \
       bind9=1:${BIND_VERSION}* bind9-host=1:${BIND_VERSION}* dnsutils \
-      webmin=${WEBMIN_VERSION}* rsync git vim curl \
+      webmin=${WEBMIN_VERSION}* git curl rsync vim \
  && rm -rf /var/lib/apt/lists/*
 
 COPY entrypoint.sh /sbin/entrypoint.sh
+COPY data/webmin/etc/miniserv.conf /etc/webmin/miniserv.conf
+COPY data/webmin/etc/miniserv.pem /etc/webmin/certs/privkey.pem
+COPY data/webmin/etc/miniserv.pem /etc/webmin/certs/fullchain.pem
+COPY data/bind/etc /etc/bind
+COPY data/bind/lib /var/lib/bind
 
 RUN chmod 755 /sbin/entrypoint.sh
 
