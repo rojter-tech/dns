@@ -1,0 +1,45 @@
+$ttl 38400
+rojter.lo.	IN	SOA	localhost. dreuter.kth.se. (
+			1555373345
+			10800
+			3600
+			604800
+			38400 )
+rojter.lo.	IN	NS	localhost.
+edge.rojter.lo.	IN	A	192.168.10.2
+brother.rojter.lo.	IN	A	192.168.10.6
+rojterqnap.rojter.lo.	IN	A	192.168.10.10
+192.168.10.2.rojter.lo.	IN	PTR	edge.rojter.lo.
+192.168.10.6.rojter.lo.	IN	PTR	brother.rojter.lo.
+192.168.10.10.rojter.lo.	IN	PTR	rojterqnap.rojter.lo.
+
+rojter.lo.	IN	A	192.168.10.100
+dc1.rojter.lo.	IN	A	192.168.10.100
+192.168.10.100.rojter.lo.	IN	PTR	dc1.rojter.lo.
+unifi.rojter.lo.	IN	A	192.168.10.1
+192.168.10.1.rojter.lo.	IN	PTR	unifi.rojter.lo.
+rras.rojter.lo.	IN	A	192.168.10.101
+192.168.10.101.rojter.lo.	IN	PTR	rras.rojter.lo.
+msserver.rojter.lo.	IN	A	192.168.10.4
+192.168.10.4.rojter.lo.	IN	PTR	msserver.rojter.lo.
+192.168.10.100.rojter.lo.	IN	PTR	rojter.lo.
+nas.rojter.lo.	IN	A	192.168.10.25
+192.168.10.25.rojter.lo.	IN	PTR	nas.rojter.lo.
+192.168.10.7.rojter.lo.	IN	PTR	arch.rojter.lo.
+arch.rojter.lo.	IN	A	192.168.10.7
+debian.rojter.lo.	IN	A	192.168.10.5
+vpn.rojter.lo.	IN	A	192.168.10.3
+192.168.10.3.rojter.lo.	IN	PTR	vpn.rojter.lo.
+192.168.10.5.rojter.lo.	IN	PTR	debian.rojter.lo.
+esxi.rojter.lo.	IN	A	192.168.10.15
+192.168.20.15.rojter.lo.	IN	PTR	esxi.rojter.lo.
+192.168.10.20.rojter.local.	IN	PTR	vc.rojter.local.
+vc.rojter.local.	IN	A	192.168.10.20
+datasci.rojter.lo.	IN	A	192.168.10.11
+192.168.10.11.rojter.lo.	IN	PTR	datasci.rojter.lo
+suse.rojter.lo.	IN	A	192.168.10.12
+192.168.10.12.rojter.lo.	IN	PTR	suse.rojter.lo
+idrac.rojter.lo.	IN	A	192.168.10.120
+192.168.10.120.rojter.lo.	IN	PTR	idrac.rojter.lo.
+fatima.rojter.lo.	IN	A	192.168.10.81
+192.168.10.81.rojter.lo.	IN	PTR	fatima.rojter.lo.

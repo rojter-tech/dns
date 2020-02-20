@@ -1,0 +1,34 @@
+$ttl 38400
+10.168.192.in-addr.arpa.	IN	SOA	localhost. dreuter.kth.se. (
+			1555370504
+			10800
+			3600
+			604800
+			38400 )
+10.168.192.in-addr.arpa.	IN	NS	localhost.
+15.10.168.192.in-addr.arpa.	IN	PTR	esxi.rojter.lo.
+2.10.168.192.in-addr.arpa.	IN	PTR	edge.rojter.lo.
+6.10.168.192.in-addr.arpa.	IN	PTR	brother.rojter.lo.
+100.10.168.192.in-addr.arpa.	IN	PTR	rojter.lo.
+100.10.168.192.in-addr.arpa.	IN	PTR	dc1.rojter.lo.
+1.10.168.192.in-addr.arpa.	IN	PTR	unifi.rojter.lo.
+101.10.168.192.in-addr.arpa.	IN	PTR	rras.rojter.lo.
+25.10.168.192.in-addr.arpa.	IN	PTR	nas.rojter.lo.
+7.10.168.192.in-addr.arpa.	IN	PTR	arch.rojter.lo.
+5.10.168.192.in-addr.arpa.	IN	PTR	debian.rojter.lo.
+3.10.168.192.in-addr.arpa.	IN	PTR	vpn.rojter.lo.
+4.10.168.192.in-addr.arpa.	IN	PTR	msserver.rojter.lo.
+20.10.168.192.in-addr.arpa.	IN	PTR	vc.rojter.local.
+10.10.168.192.in-addr.arpa.	IN	PTR	qnap.rojter.lo.
+11.10.168.192.in-addr.arpa.	IN	PTR	datasci.rojter.lo.
+12.10.168.192.in-addr.arpa.	IN	PTR	suse.rojter.lo.
+120.10.168.192.in-addr.arpa.	IN	PTR	idrac.rojter.lo.
+81.10.168.192.in-addr.arpa.	IN	PTR	fatima.rojter.lo.
+10.10.168.192.in-addr.arpa.	IN	PTR	rojterqnap.rojter.lo.
+110.10.168.192.in-addr.arpa.	IN	PTR	core0.rojter.lo.
+111.10.168.192.in-addr.arpa.	IN	PTR	core1.rojter.lo.
+112.10.168.192.in-addr.arpa.	IN	PTR	core2.rojter.lo.
+250.10.168.192.in-addr.arpa.	IN	PTR	vc.rojter.lo.
+50.10.168.192.in-addr.arpa.	IN	PTR	rancher0.rojter.lo.
+51.10.168.192.in-addr.arpa.	IN	PTR	rancher1.rojter.lo.
+52.10.168.192.in-addr.arpa.	IN	PTR	rancher2.rojter.lo.
