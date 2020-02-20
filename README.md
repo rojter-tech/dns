@@ -42,7 +42,7 @@ docker pull rojtertech/dns
 Alternatively you can build the image yourself.
 
 ```bash
-docker build -t rojtertech/dns github.com/sameersbn/docker-bind
+docker build -t rojtertech/dns github.com/rojter-tech/dns
 ```
 
 ## Quickstart
