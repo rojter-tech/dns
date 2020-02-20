@@ -1,0 +1,8 @@
+logfile=/var/log/messages
+secrets=/etc/ipsec.secrets
+policies_dir=/etc/ipsec.d/policies
+stop_cmd=/etc/init.d/ipsec stop
+start_cmd=/etc/init.d/ipsec start
+ipsec=/usr/sbin/ipsec
+file=/etc/ipsec.conf
+restart_cmd=/etc/init.d/ipsec restart

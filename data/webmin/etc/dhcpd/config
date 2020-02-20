@@ -1,0 +1,16 @@
+dhcpd_nocols=5
+restart_cmd=service isc-dhcp-server restart
+group_name=0
+lease_tz=0
+start_cmd=service isc-dhcp-server start
+display_max=100
+desc_name=0
+stop_cmd=service isc-dhcp-server stop
+pid_file=/var/run/dhcpd.pid
+show_ip=0
+dhcpd_path=/usr/sbin/dhcpd
+dhcpd_conf=/etc/dhcp/dhcpd.conf
+lease_file=/var/lib/dhcp/dhcpd.leases
+lease_sort=0
+interfaces_type=debian
+show_mac=0
