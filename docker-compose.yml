@@ -15,6 +15,10 @@ services:
     volumes:
     - data:/data
     - /var/dockerdata/certs/rojter.tech:/data/webmin/certs
+    deploy:
+      mode: global
+      placement:
+        constraints: [node.platform.os == linux]
 
 volumes:
   data:
