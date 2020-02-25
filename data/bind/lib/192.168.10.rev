@@ -1,6 +1,6 @@
 $ttl 38400
 10.168.192.in-addr.arpa.	IN	SOA	localhost. dreuter.kth.se. (
-			1555370504
+			1555370507
 			10800
 			3600
 			604800
@@ -32,3 +32,5 @@ $ttl 38400
 50.10.168.192.in-addr.arpa.	IN	PTR	rancher0.rojter.lo.
 51.10.168.192.in-addr.arpa.	IN	PTR	rancher1.rojter.lo.
 52.10.168.192.in-addr.arpa.	IN	PTR	rancher2.rojter.lo.
+50.10.168.192.in-addr.arpa.	IN	PTR	rancher.rojter.lo.
+225.10.168.192.in-addr.arpa.	IN	PTR	buster.rojter.lo.

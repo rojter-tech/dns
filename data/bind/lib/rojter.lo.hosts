@@ -1,6 +1,6 @@
 $ttl 38400
 rojter.lo.	IN	SOA	localhost. dreuter.kth.se. (
-			1555373394
+			1555373398
 			10800
 			3600
 			604800
@@ -59,3 +59,7 @@ rancher2.rojter.lo.	IN	A	192.168.10.52
 192.168.10.50.rojter.lo.	IN	PTR	rancher0
 192.168.10.51.rojter.lo.	IN	PTR	rancher1
 192.168.10.52.rojter.lo.	IN	PTR	rancher2
+rancher.rojter.lo.	IN	A	192.168.10.50
+192.168.10.50.rojter.lo.	IN	PTR	rancher
+buster.rojter.lo.	IN	A	192.168.10.225
+192.168.10.225.rojter.lo.	IN	PTR	buster
