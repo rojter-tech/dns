@@ -14,7 +14,7 @@ services:
       ROOT_PASSWORD_FILE: /run/secrets/mainpw
     volumes:
     - data:/data
-    - /var/dockerdata/certs/rojter.tech:/data/webmin/certs
+    - /var/dockerdata/certs/rojter.tech:/data/webmin/etc/certs
     deploy:
       mode: global
       placement:
